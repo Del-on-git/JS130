@@ -1,6 +1,6 @@
 function reduce(arr, callbackFn, initValue) {
   let acc;
-  
+
   if (initValue) {
     acc = initValue;
   } else {
