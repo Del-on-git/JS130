@@ -14,11 +14,10 @@ class PerfectNumber {
     }
 
     let aliquot = divisors.reduce((sum, num) => sum + num, 0);
-    if (aliquot === number) {
-      return 'perfect';
-    }
 
-    return (aliquot < number ? 'deficient' : 'abundant');
+    return (aliquot === number ?
+      'perfect' :
+      (aliquot < number ? 'deficient' : 'abundant'));
   }
 }
 
